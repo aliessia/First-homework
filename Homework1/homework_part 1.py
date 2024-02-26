@@ -4,9 +4,6 @@ from datetime import datetime, timedelta
 def get_birthdays_per_week(users):
     birthdays_per_week = defaultdict(list)
     today = datetime.today().date()
-    days_until_next_monday = (7 - today.weekday()) % 7
-    next_monday = today + timedelta(days=days_until_next_monday)
-    next_sunday = next_monday + timedelta(days=6)
 
     for user in users:
         name = user["name"]
