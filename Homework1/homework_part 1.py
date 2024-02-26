@@ -33,10 +33,10 @@ def get_birthdays_per_week(users):
             print(f"{day}: {names}")
 
 users = [
-    {"name": "Bill Gates", "birthday": datetime(1955, 2, 24)},  # Припустимо, це наступний тиждень
-    {"name": "Jill Valentine", "birthday": datetime(1974, 2, 20)},  # Вихідний, переносимо на понеділок
-    {"name": "Kim Kardashian", "birthday": datetime(1980, 2, 28)},  # Не на наступному тижні
-    {"name": "Jan Koum", "birthday": datetime(1976, 3, 3)}  # Вихідний, переносимо на понеділок
+    {"name": "Bill Gates", "birthday": datetime(1955, 2, 24)}, 
+    {"name": "Jill Valentine", "birthday": datetime(1974, 2, 20)},  
+    {"name": "Kim Kardashian", "birthday": datetime(1980, 2, 28)},
+    {"name": "Jan Koum", "birthday": datetime(1976, 3, 3)} 
 ]
 
 get_birthdays_per_week(users)
